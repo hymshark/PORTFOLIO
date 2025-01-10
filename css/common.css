@@ -1,0 +1,118 @@
+@charset "utf-8";
+@font-face {
+  font-family: 'Shadows Into';
+  src: url('font/ShadowsIntoLight/ShadowsIntoLight.eot');
+  src: url('font/ShadowsIntoLight/ShadowsIntoLight.eot?#iefix') format('embedded-opentype'),
+      url('font/ShadowsIntoLight/ShadowsIntoLight.woff2') format('woff2'),
+      url('font/ShadowsIntoLight/ShadowsIntoLight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Shadows Into';
+  src: url('font/ShadowsIntoLight/ShadowsIntoLight.eot');
+  src: url('font/ShadowsIntoLight/ShadowsIntoLight.eot?#iefix') format('embedded-opentype'),
+      url('font/ShadowsIntoLight/ShadowsIntoLight.woff2') format('woff2'),
+      url('font/ShadowsIntoLight/ShadowsIntoLight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Playride';
+  src: url('font/playride/Playride.eot');
+  src: url('font/playride/Playride.eot?#iefix') format('embedded-opentype'),
+      url('font/playride/Playride.woff2') format('woff2'),
+      url('font/playride/Playride.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Playride';
+  src: url('font/playride/Playride.eot');
+  src: url('font/playride/Playride.eot?#iefix') format('embedded-opentype'),
+      url('font/playride/Playride.woff2') format('woff2'),
+      url('font/playride/Playride.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Big Reputation';
+  src: url('font/BigReputation/BigReputation-Sans.eot');
+  src: url('font/BigReputation/BigReputation-Sans.eot?#iefix') format('embedded-opentype'),
+      url('font/BigReputation/BigReputation-Sans.woff2') format('woff2'),
+      url('font/BigReputation/BigReputation-Sans.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+	font-family: 'Pretendard Variable';
+	font-weight: 45 920;
+	font-style: normal;
+	font-display: swap;
+	src: url('font/Pretendard/woff2/PretendardVariable.woff2') format('woff2-variations');
+}
+
+body {
+  color: #333;
+  font-family: 'Pretendard Variable';
+}
+
+/* header */
+.mob_nav {
+  display: none;
+}
+.header{
+  width: 100%;
+  border-bottom: 1px solid #333;
+}
+.header .inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .inner {
+  max-width: 1920px;
+  width: calc(100% - 200px);
+  margin: 0 auto;
+}
+.header .inner .logo {
+  font-family: 'Big Reputation';
+  font-size: 3.75rem;
+  margin: 0;
+}
+.header .inner .nav {
+  position: relative;
+}
+.header .inner .nav .gnb {
+  display: flex;
+  gap: 116px;
+  font-size: 1.5rem;
+  font-weight: medium;
+}
+
+.header .inner .nav .menu_bar span {
+  position: absolute;
+  left: -99999px;
+}
+.header .inner .nav .menu_bar {
+  width: 150px;
+  height: 5px;
+  background-color: #333;
+  position: absolute;
+  bottom: 0;
+  left: -0%;
+}
+
+
+
+h3.title {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #fff;
+  margin: 250px 0 60px 0;
+}

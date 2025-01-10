@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Big Reputation';
+    src: url('BigReputation-Sans.eot');
+    src: url('BigReputation-Sans.eot?#iefix') format('embedded-opentype'),
+        url('BigReputation-Sans.woff2') format('woff2'),
+        url('BigReputation-Sans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Big Reputation';
+    src: url('BigReputation-Script.eot');
+    src: url('BigReputation-Script.eot?#iefix') format('embedded-opentype'),
+        url('BigReputation-Script.woff2') format('woff2'),
+        url('BigReputation-Script.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

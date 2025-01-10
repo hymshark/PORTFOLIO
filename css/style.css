@@ -1,0 +1,299 @@
+@charset "utf-8";
+@import url(common.css);
+@import url(reset.css);
+
+main {
+  max-width: 1920px;
+  width: calc(100% - 200px);
+  margin: 0 auto;
+}
+
+/* intro */
+.main .Intro {
+  height: 100vh;
+  position: relative;
+}
+.main .Intro .QR {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+}
+.main .Intro .text_wrap {
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -35%);
+}
+.main .Intro .text_wrap p {
+  font-family: 'Shadows Into';
+  font-size: 2.188rem;
+  margin: 30px 0;
+}
+.main .Intro .text_wrap h2 {
+  font-family: 'Playride';
+  font-size: 17.063rem;
+}
+.main .Intro .text_wrap p:nth-child(3){
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+  transform: translate(0, -50%);
+}
+.main .Intro .text_wrap p:nth-child(4) {
+  font-family: 'Pretendard Variable';
+  font-size: 1.25rem;
+  color: #A9A9A9;
+  text-align: right;
+  position: absolute;
+  right: 0;
+  bottom: 25%;
+  transform: translate(0, -25%);
+
+}
+/* Profile */
+.Profile{
+  position: relative;
+}
+.Profile .title {
+  position: relative;
+}
+.Profile .title::before {
+  background: url(../img/Profile_title.png) center center / cover no-repeat;
+  content: '';
+  height: 101px;
+  width: 337px;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-30%, -50%);
+  z-index: -1;
+}
+.Profile .pro_inner {
+  width: 1600px;
+  margin: 0 auto;
+  font-size: 1.25rem;
+}
+.Profile .pro_inner .pro_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Profile .pro_inner .pro_wrap .list {
+  display: flex;
+  position: relative;
+  margin-bottom: 60px;
+}
+.Profile .pro_inner .pro_wrap .list ul > li {
+  margin-bottom: 15px;
+}
+.Profile .pro_inner .pro_wrap .list >li:nth-child(1) {
+  font-weight: 600;
+  width: 135px;
+  display: block;
+}
+
+.Profile .pro_inner .pro_wrap .list .skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 59%;
+}
+.Profile .pro_inner .pro_wrap .list .skill >li:nth-child(6) {
+  margin: 0 5px 15px 5px;
+}
+/* btn style */
+.Profile .down_btn button {
+  cursor: pointer;
+  padding: 10px 30px;
+  border: 0;
+  background-color: #333;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 500;
+  border-radius: 10px;
+  transition:all .5s ease;
+}
+.Profile .down_btn button:hover {
+  border: 2px solid #333;
+  color: #333;
+  background-color: #fff;
+}
+.Profile .down_btn {
+  position: absolute;
+  bottom: -17%;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow:hidden;
+}
+
+/* wdb Design */
+.Design .title {
+  position: relative;
+}
+.Design .title::before {
+  background: url(../img/webDesign_titile.png) center center / cover no-repeat;
+  content: '';
+  height: 101px;
+  width: 430px;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-19%, -50%);
+  z-index: -1;
+}
+
+.Design .tab_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1370px;
+  width: calc(100% - 20px);
+  height: 48px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 1px 4px hsla(0, 0%, 85%, 0.33);
+  font-size: 1.5rem;
+  margin-bottom: 77px;
+}
+.Design .tab_menu li {
+  transition: 0.2s;
+}
+.Design .tab_menu li:nth-child(1){
+  padding-left: 30px;
+}
+.Design .tab_menu li:nth-child(7) {
+  padding-right: 30px;
+}
+.Design .tab_menu li:hover {
+  cursor: pointer;
+  text-decoration-line: underline;
+  text-decoration-color: #333333;
+  text-underline-offset: 6px;
+}
+.Design .tab_menu li.active:hover {
+  text-decoration-line: underline;
+  text-decoration-color: #fff;
+  text-underline-offset: 6px;
+}
+.Design .tab_menu li.active {
+  padding: 10px 30px;
+  border-radius: 15px;
+  color: #fff;
+  background-color: #333333;
+}
+.Design .tab_list  > li{
+  display: flex;
+  justify-content: space-between;
+  display: none;
+}
+.Design .tab_list  > li.active {
+  display: flex;
+}
+.Design .tab_list .web_right .web_title > p {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.Design .tab_list .web_right .web_title h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 30px 0 120px 0;
+}
+
+
+.Design .tab_list .web_right .text_wrap >ul {
+  display: flex;
+  margin-bottom: 30px;
+}
+.Design .tab_list .web_right .text_wrap >ul li {
+  font-size: 1.125rem;
+  margin-right: 24px;
+}
+.Design .tab_list .web_right .text_wrap >ul>li:nth-child(1){
+  font-weight: 600;
+  font-size: 1.25rem;
+  width: 135px;
+  margin: 0;
+}
+.Design .tab_list .web_right .text_wrap > ul li > ul{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.Design .tab_list .web_right .text_wrap > ul li > ul > li {
+  position: relative;
+}
+.Design .tab_list .web_right .text_wrap > ul:first-child > li > ul > li::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -25px;
+  width: 17px;
+  height: 18px;
+  background: url(../img/page.svg) center center / cover no-repeat;
+}
+
+
+.Design .tab_list .web_right .web_btn {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  cursor: pointer;
+}
+.Design .tab_list .web_right .web_btn button {
+  border-radius: 10px;
+  border: 2px solid #333333;
+  background-color: #fff;
+  font-weight: 500;
+  font-size: 1.125rem;
+  transition: 0.5s;
+  color: #333;
+  position: relative;
+}
+.Design .tab_list .web_right .web_btn button.site {
+  padding: 10px 30px;
+}
+.Design .tab_list .web_right .web_btn button.process {
+  padding: 10px 25px;
+}
+.Design .tab_list .web_right .web_btn button.fig {
+  height: 44px;
+  padding: 4px 8px;
+}
+.Design .tab_list .web_right .web_btn button span {
+  border-radius: 10px;
+  border: 2px solid #333333;
+  background-color: #333;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 100%;
+  height: 102%;
+  z-index: -1;
+}
+.Design .tab_list .web_right .web_btn button:hover{
+  background-color: #333;
+  color: #fff;
+}
+.Design .tab_list .web_right .web_btn button.fig a .figma_w {
+  display: none;
+}
+.Design .tab_list .web_right .web_btn button.fig:hover a .figma_w {
+  display: block;
+}
+.Design .tab_list .web_right .web_btn button.fig:hover a img {
+  display: none;
+}
+.Design .tab_list .web_right .web_btn button:active {
+  position: relative;
+  top: 5px;
+  left: 5px;
+  transition: 0.3s;
+}
+.Design .tab_list .web_right .web_btn button:active span{
+  background-color: #fff;
+  border: none;
+}
