@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script src="lib/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="inner">
+            <h1 class="logo">HYEMI</h1>
+            <nav class="nav">
+                <ul class="gnb">
+                    <li class="active">
+                        <a href="#1">Intro</a>
+                        <img src="img/header_title.png" alt="intro메뉴 활성화">
+                    </li>
+                    <li>
+                        <a href="#2">Profile</a>
+                        <img src="img/header_title.png" alt="Profile메뉴 활성화">
+                    </li>
+                    <li><a href="#3">Works</a><img src="img/header_title.png" alt="Works메뉴 활성화"></li>
+                    <li><a href="#4">Artworks</a><img src="img/header_title.png" alt="Artworks메뉴 활성화"></li>
+                    <li><a href="#5">Contact</a><img src="img/header_title.png" alt="Contact메뉴 활성화"></li>
+                </ul><!-- .gnb end -->
+            </nav><!-- .nav end -->
+        </div><!-- .inner end -->
+
+        <div class="mob_nav">
+            <div class="menu_btn">
+                <img src="img/menu_btn.svg" alt="모바일 버전 메뉴버튼">
+            </div>
+            <ul class="mob_gnb">
+                <li>Intro</li>
+                <li>Profile</li>
+                <li>Works</li>
+                <li>Artworks</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </header><!-- .header end -->
+    <main class="main">
+        <div class="cursor" id="cursor">
+            <div class="hover"></div>
+            <div class="hover-box"></div>
+        </div>
+        <section class="Intro" id="1">
+            <!-- <div class="QR">
+                <a href=""><img src="" alt=""></a>
+                <p>mobile ver.</p>
+            </div> --><!-- .QR end -->
+            <div class="text_wrap">
+                <p>Web Design / Publising</p>
+                <h2 class="focus-in-contract-bck">PORTFOLIO</h2>
+                <p>Shin Hye Mi</p>
+                <p>© 2024-2025</p>
+            </div><!-- .title_wrap end -->
+
+        </section><!-- .Intro end -->
+
+        <section class="Profile" id="2">
+            <h3 class="title">Profile</h3>
+            <div class="pro_inner">
+
+                <div class="pro_wrap">
+                    <div class="pro_left">
+                        <ul class="list">
+                            <li>이름</li>
+                            <li>신혜미</li>
+                        </ul>
+                        <ul class="list">
+                            <li>생년월일</li>
+                            <li>1997.11.14</li>
+                        </ul>
+                        <ul class="list">
+                            <li>연락처</li>
+                            <li>
+                                <ul>
+                                    <li>010-2572-2824</li>
+                                    <li>shinhyemi@kakao.com</li>
+                                    <li>@shin_heymi</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="list">
+                            <li>교육</li>
+                            <li>
+                                <ul>
+                                    <li>그린컴퓨터 아카데미 UI/UX 반응형 웹디자인&웹퍼블리셔 양성과정 수료 (2025.01)</li>
+                                    <li>서경대학교 아동학과 졸업 (2021.02)</li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div><!-- .pro_left end -->
+                    <div class="pro_right">
+                        <ul class="list">
+                            <li>자격증</li>
+                            <li>
+                                <ul>
+                                    <li>보육교사 2급 (2021.02)</li>
+                                    <li>운전면허 2종보통 (2018.09)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="list">
+                            <li>거주지</li>
+                            <li>경기도 안양시 만안구 안양2동</li>
+                        </ul>
+                        <ul class="list">
+                            <li>스킬</li>
+                            <li>
+                                <ul class="skill">
+                                    <li><img src="img/html5.svg" alt="html5 아이콘"></li>
+                                    <li><img src="img/css3.svg" alt="css3 아이콘"></li>
+                                    <li><img src="img/js.svg" alt="javascript 아이콘"></li>
+                                    <li><img src="img/jquery.svg" alt="jquery 아이콘"></li>
+                                    <li><img src="img/react.svg" alt="react 아이콘"></li>
+                                    <li><img src="img/Ps.svg" alt="photoshop 아이콘"></li>
+                                    <li><img src="img/Ai.svg" alt="illustrator 아이콘"></li>
+                                    <li><img src="img/figma.svg" alt="figma 아이콘"></li>
+                                    <li><img src="img/hwp.svg" alt="한글 아이콘"></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!-- .pro_right end -->
+                </div><!-- .pro_wrap end -->
+                <a href="src/shinhyemi.pdf" class="down_btn" target='_blank'>
+                    <button type="button">
+                        이력서&자기소개서
+                    </button>
+                </a>
+            </div><!-- .pro_inner end -->
+        </section><!-- Profile end -->
+
+        <section class="Design" id="3">
+            <h3 class="title">Web Design</h3>
+
+            <ul class="tab_menu">
+                <li class="active">누디크</li>
+                <li>알파몰</li>
+                <li>백상갤러리</li>
+                <li>더벤티</li>
+                <li> CJ프레시웨이</li>
+                <li>센골드(App)</li>
+                <li>쏘카(App)</li>
+            </ul><!-- .tab_menu end -->
+
+            <ul class="tab_list">
+                <li class="active"><!-- 누디크 -->
+                    <div class="web_right">
+                        <div class="web_title">
+                            <p>반응형 웹 리디자인</p>
+                            <h3>누디크</h3>
+                        </div><!-- .web_title end -->
+                        <div class="text_wrap">
+                            <ul>
+                                <li>작업영역</li>
+                                <li>
+                                    <ul>
+                                        <li class="page"><a href="https://hymshark.github.io/NUDIQUE/" target='_blank'>메인페이지 </a></li>
+                                        <li class="page"><a href="https://hymshark.github.io/NUDIQUE/sub/about.html" target='_blank'>서브페이지 </a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>기여도</li>
+                                <li>
+                                    <ul>
+                                        <li>디자인 100%</li>
+                                        <li>퍼블리싱 100%</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>작업 툴</li>
+                                <li>HTML</li>
+                                <li>SCSS</li>
+                                <li>CSS</li>
+                                <li>jQuery</li>
+                            </ul>
+                        </div><!-- .text_wrap end -->
+                        <div class="web_btn">
+                            <button type="button" class="site"><a href="https://hymshark.github.io/NUDIQUE/" target='_blank'>사이트 바로가기<span></span></a></button>
+                            <button type="button" class="process">
+                                <a href="src/nudique_process.pdf" target='_blank'>작업과정<span></span></a>
+                            </button>
+                            <button type="button" class="fig">
+                                <a href="https://www.figma.com/design/XOaghyxII7KK3n19zCEpO8/%EB%88%84%EB%94%94%ED%81%AC_%EB%B0%98%EC%9D%91%ED%98%95%EC%9B%B9_%EB%A6%AC%EB%94%94%EC%9E%90%EC%9D%B8_%EB%A9%94%EC%9D%B8%ED%8E%98%EC%9D%B4%EC%A7%80?node-id=0-1"
+                                   target='_blank'>
+                                    <img src="img/figma_btn.svg" alt="피그마 주소">
+                                    <img class="figma_w" src="img/figma_btn_W.svg"><span></span>
+                                </a></button>
+                        </div><!-- .web_btn end -->
+                    </div><!-- .web_right end -->
+                    <div class="mock_up">
+                        <div class="mob slide"><span><img src="img/nudique_main_mobile.jpg" alt=""></span></div>
+                        <div class="tap slide"><span><img src="img/nudique_main_tab.jpg" alt=""></span></div>
+                        <div class="laptop slide"><span><img src="img/nudique_main_pc.jpg" alt=""></span></div>
+                        <div class="pc slide"><span><img src="img/nudique_main_pc.jpg" alt=""></span></div>
+                    </div>
+                </li><!-- 누디크 -->
+                <li>
+                    <div class="web_right">
+                        <div class="web_title">
+                            <p>반응형 웹 리디자인</p>
+                            <h3>알파 몰</h3>
+                        </div><!-- .web_title end -->
+                        <div class="text_wrap">
+                            <ul>
+                                <li>작업영역</li>
+                                <li>
+                                    <ul>
+                                        <li>메인페이지</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>기여도</li>
+                                <li>
+                                    <ul>
+                                        <li>디자인 100%</li>
+                                        <li>퍼블리싱 100%</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>작업 툴</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Java Script</li>
+                            </ul>
+                        </div><!-- .text_wrap end -->
+                        <div class="web_btn">
+                            <button type="button" class="site"><a href="https://hymshark.github.io/alpha/" target='_blank'>사이트 바로가기<span></span></a></button>
+                            <button type="button" class="process"><a href="src/Alphamall_process.pdf" target='_blank'>작업과정<span></span></a></button>
+                            <button type="button" class="fig"><a href="https://www.figma.com/design/zlJ5YJjn4aOgHdYQnjBJs9/%EC%95%8C%ED%8C%8C%EB%AA%B0_%EB%B0%98%EC%9D%91%ED%98%95_%EB%A6%AC%EB%94%94%EC%9E%90%EC%9D%B8?node-id=0-1&t=TeYkptOwTtIzJ7em-1" target='_blank'><img src="img/figma_btn.svg" alt="피그마 주소"><img
+                                        class="figma_w" src="img/figma_btn_W.svg"><span></span></a></button>
+                        </div><!-- .web_btn end -->
+                    </div><!-- .web_right end -->
+                    <div class="mock_up">
+                        <div class="mob slide"><span><img src="img/alphamall_mob.png" alt=""></span></div>
+                        <div class="tap slide"><span><img src="img/alphamall_tab.png" alt=""></span></div>
+                        <div class="laptop slide"><span><img src="img/alphamall_PC.png" alt=""></span></div>
+                        <div class="pc slide"><span><img src="img/alphamall_PC.png" alt=""></span></div>
+                    </div>
+                </li><!-- 알파몰 -->
+                <li>
+                    <div class="web_right">
+                        <div class="web_title">
+                            <p>반응형 웹 리디자인</p>
+                            <h3>백상 갤러리</h3>
+                        </div><!-- .web_title end -->
+                        <div class="text_wrap">
+                            <ul>
+                                <li>작업영역</li>
+                                <li>
+                                    <ul>
+                                        <li>메인페이지</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>기여도</li>
+                                <li>
+                                    <ul>
+                                        <li>디자인 50%</li>
+                                        <li>퍼블리싱 100%</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>작업 툴</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                            </ul>
+                        </div><!-- .text_wrap end -->
+                        <div class="web_btn">
+                            <button type="button" class="site"><a href="https://hymshark.github.io/Baexang/" target='_blank'>사이트 바로가기<span></span></a></button>
+                            <button type="button" class="process"><a href="src/baexang_gallery_design.pdf" target='_blank'>디자인 시안<span></span></a></button>
+                        </div><!-- .web_btn end -->
+                    </div><!-- .web_right end -->
+                    <div class="mock_up">
+                        <div class="mob slide"><span><img src="img/baexang_gallery_mob.jpg" alt=""></span></div>
+                        <div class="tap slide"><span><img src="img/baexang_gallery_tab.jpg" alt=""></span></div>
+                        <div class="pc slide"><span><img src="img/baexang_gallery_PC.jpg" alt=""></span></div>
+                    </div>
+                </li><!-- 백상갤러리 -->
+                <li>
+                    <div class="web_right">
+                        <div class="web_title">
+                            <p>적응형 웹 리디자인</p>
+                            <h3>더 벤티</h3>
+                        </div><!-- .web_title end -->
+                        <div class="text_wrap">
+                            <ul>
+                                <li>작업영역</li>
+                                <li>
+                                    <ul>
+                                        <li>메인페이지</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>기여도</li>
+                                <li>
+                                    <ul>
+                                        <li>디자인 100%</li>
+                                        <li>퍼블리싱 100%</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>작업 툴</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>jQuery</li>
+                            </ul>
+                        </div><!-- .text_wrap end -->
+                        <div class="web_btn">
+                            <button type="button" class="site"><a href="https://hymshark.github.io/theVenti/" target='_blank'>사이트 바로가기<span></span></a></button>
+                            <button type="button" class="process"><a href="src/theVenti_process.pdf" target='_blank'>작업 과정<span></span></a></button>
+                        </div><!-- .web_btn end -->
+                    </div><!-- .web_right end --> 
+                    <div class="mock_up">
+                        <div class="pc slide"><span><img src="img/theventi_main01.jpg" alt=""></span></div>
+                    </div>
+                </li><!-- 더벤티 -->
+                <li>
+                    <div class="web_right">
+                        <div class="web_title">
+                            <p>적응형 웹 클론코딩</p>
+                            <h3>CJ프레시웨이</h3>
+                        </div><!-- .web_title end -->
+                        <div class="text_wrap">
+                            <ul>
+                                <li>작업영역</li>
+                                <li>
+                                    <ul>
+                                        <li>메인페이지</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>기여도</li>
+                                <li>퍼블리싱 100%</li>
+                            </ul>
+                            <ul>
+                                <li>작업 툴</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>swiper</li>
+                            </ul>
+                        </div><!-- .text_wrap end -->
+                        <div class="web_btn">
+                            <button type="button" class="site"><a href="https://hymshark.github.io/CJfreshway/" target='_blank'>사이트 바로가기<span></span></a></button>
+                        </div><!-- .web_btn end -->
+                    </div><!-- .web_right end -->
+                    <div class="mock_up">
+                        <div class="pc slide"><span><img src="img/cj_main_pc.jpg" alt=""></span></div>
+                    </div>
+                </li><!-- CJ프레시웨이 -->
+                <li>
+                    <div class="web_right">
+                        <div class="web_title">
+                            <p>앱 리디자인</p>
+                            <h3>센골드App</h3>
+                        </div><!-- .web_title end -->
+                        <div class="text_wrap">
+                            <ul>
+                                <li>작업영역</li>
+                                <li>
+                                    <ul>
+                                        <li class="page"><a href="https://www.figma.com/proto/s870S6qsuIJqJarzU1kB5z/%EC%84%BC%EA%B3%A8%EB%93%9C_%EB%A6%AC%EB%94%94%EC%9E%90%EC%9D%B8?page-id=0%3A1&node-id=1-2&viewport=-40%2C125%2C0.83&t=I8KbVXH2p3evuFyl-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2%3A90" target='_blank'>메인페이지</a></li>
+                                        <li class="page"><a href="https://www.figma.com/proto/s870S6qsuIJqJarzU1kB5z/%EC%84%BC%EA%B3%A8%EB%93%9C_%EB%A6%AC%EB%94%94%EC%9E%90%EC%9D%B8?page-id=0%3A1&node-id=12-129&viewport=-40%2C-389%2C0.83&t=RqAH14owmepnDHSM-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2%3A90" target='_blank'>서브페이지2</a></li>
+                                        <li class="page"><a href="https://www.figma.com/proto/s870S6qsuIJqJarzU1kB5z/%EC%84%BC%EA%B3%A8%EB%93%9C_%EB%A6%AC%EB%94%94%EC%9E%90%EC%9D%B8?page-id=0%3A1&node-id=170-358&viewport=-40%2C-389%2C0.83&t=Rt2rbOe5o0AMvZtp-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2%3A90" target='_blank'>서브페이지4</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li class="page"><a href="https://www.figma.com/proto/s870S6qsuIJqJarzU1kB5z/%EC%84%BC%EA%B3%A8%EB%93%9C_%EB%A6%AC%EB%94%94%EC%9E%90%EC%9D%B8?page-id=0%3A1&node-id=2-90&viewport=-40%2C169%2C0.83&t=mu2R9QEh7OhTm2Pt-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2%3A90" target='_blank'>서브페이지</a>1</li>
+                                        <li class="page"><a href="https://www.figma.com/proto/s870S6qsuIJqJarzU1kB5z/%EC%84%BC%EA%B3%A8%EB%93%9C_%EB%A6%AC%EB%94%94%EC%9E%90%EC%9D%B8?page-id=0%3A1&node-id=166-357&viewport=-40%2C125%2C0.83&t=LsIOW7QCPcSf8tLQ-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2%3A90" target='_blank'>서브페이지3</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>기여도</li>
+                                <li>디자인 100%</li>
+                            </ul>
+                            <ul>
+                                <li>작업 툴</li>
+                                <li>Figma</li>
+                            </ul>
+                        </div><!-- .text_wrap end -->
+                        <div class="web_btn">
+                            <button type="button" class="site"><a href="https://www.figma.com/proto/s870S6qsuIJqJarzU1kB5z/%EC%84%BC%EA%B3%A8%EB%93%9C_%EB%A6%AC%EB%94%94%EC%9E%90%EC%9D%B8?page-id=0%3A1&node-id=1-2&viewport=400%2C60%2C0.3&t=cagTJMqpzRwH3UwB-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2%3A90" target='_blank'>프로토타입 바로가기<span></span></a></button>
+                            <button type="button" class="process"><a href="src/cengoldAPP_process.pdf" target='_blank'>작업 과정<span></span></a></button>
+                            <button type="button" class="fig"><a href="https://www.figma.com/design/s870S6qsuIJqJarzU1kB5z/%EC%84%BC%EA%B3%A8%EB%93%9C_%EB%A6%AC%EB%94%94%EC%9E%90%EC%9D%B8?node-id=0-1&t=lveCZ1MgOb3tKhEk-1" target='_blank'><img src="img/figma_btn.svg" alt="피그마 주소"><img
+                                        class="figma_w" src="img/figma_btn_W.svg"><span></span></a></button>
+                        </div><!-- .web_btn end -->
+                    </div><!-- .web_right end -->
+                    <div class="mock_up">
+                        <div class="app">
+                            
+                                <img src="img/APP_device01.png" alt="">
+                            
+                        </div>
+                        <div class="app">
+                            <span>
+                                <img class="slide" src="img/cengoldAPP_main.jpg" alt="">
+                                <img src="img/APP_device02_1.png" alt="">
+                            </span>
+                        </div>
+                        <div class="app">
+                            
+                                <img src="img/APP_device03.png" alt="">
+                            
+                        </div>
+                    </div>
+                </li><!-- 센골드 -->
+                <li>
+                    <div class="web_right">
+                        <div class="web_title">
+                            <p>앱 디자인 모작</p>
+                            <h3>쏘카App</h3>
+                        </div><!-- .web_title end -->
+                        <div class="text_wrap">
+                            <ul>
+                                <li>작업영역</li>
+                                <li>
+                                    <ul>
+                                        <li class="page"><a href="https://www.figma.com/proto/U4TZZeotimwnsguXiTgm5n/%EC%8F%98%EC%B9%B4-%EB%94%94%EC%9E%90%EC%9D%B8-%EB%AA%A8%EC%9E%91?page-id=0%3A1&node-id=1-83&viewport=283%2C32%2C0.31&t=e5yVxXOwXL0spmkz-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A83" target='_blank'>메인페이지</a></li>
+                                        <li class="page"><a href="https://www.figma.com/proto/U4TZZeotimwnsguXiTgm5n/%EC%8F%98%EC%B9%B4-%EB%94%94%EC%9E%90%EC%9D%B8-%EB%AA%A8%EC%9E%91?page-id=0%3A1&node-id=9-169&viewport=283%2C230%2C0.31&t=j4RBnpJsby3pasxH-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A83" target='_blank'>서브페이지1</a></li>
+                                        <!-- <li>서브페이지2</li> -->
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>기여도</li>
+                                <li>디자인 100%</li>
+                            </ul>
+                            <ul>
+                                <li>작업 툴</li>
+                                <li>Figma</li>
+                            </ul>
+                        </div><!-- .text_wrap end -->
+                        <div class="web_btn">
+                            <button type="button" class="site"><a href="https://www.figma.com/proto/U4TZZeotimwnsguXiTgm5n/%EC%8F%98%EC%B9%B4-%EB%94%94%EC%9E%90%EC%9D%B8-%EB%AA%A8%EC%9E%91?page-id=0%3A1&node-id=9-169&viewport=112%2C186%2C0.46&t=0yw9HonGi2Y0aQgR-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A83" target='_blank'>프로토타입 바로가기<span></span></a></button>
+                            <button type="button" class="fig"><a href="https://www.figma.com/design/U4TZZeotimwnsguXiTgm5n/%EC%8F%98%EC%B9%B4-%EB%94%94%EC%9E%90%EC%9D%B8-%EB%AA%A8%EC%9E%91?node-id=0-1&t=0VX1OU1dakYWiAcN-1" target='_blank'><img src="img/figma_btn.svg" alt="피그마 주소"><img
+                                        class="figma_w" src="img/figma_btn_W.svg"><span></span></a></button>
+                        </div><!-- .web_btn end -->
+                    </div><!-- .web_right end -->
+                    <div class="mock_up">
+                        <div class="app">
+                            <img src="img/socar_sub1.png" alt="">
+                        </div>
+                        <div class="app">
+                            <span>
+                                <img src="img/socar_main.jpg" alt="" class="slide">
+                                <img src="img/APP_device02_1.png" alt="">
+                            </span>
+                        </div>
+                        <div class="app">
+                            <img src="img/socar_sub2.png" alt="">
+                        </div>
+                    </div>
+                </li><!-- 쏘카 -->
+            </ul>
+        </section><!-- .Design end -->
+
+        <section class="graphic" id="4">
+            <div class="fix">
+                <div class="title_wrap">
+                    <h3 class="title">Artworks</h3>
+                    <!-- <p>클릭 시 이미지가 확대됩니다.</p> -->
+                </div><!-- .title_wrap end -->
+                <div class="figure">
+                    <span>확대 이미지</span>
+                </div><!-- .figure end -->
+            </div><!-- .fix end -->
+            <div class="graphic_right">
+                <div class="item"><img src="img/Ai.svg" alt=""></div>
+                <div class="item"><img src="img/Ai.svg" alt=""></div>
+                <div class="item"><img src="img/Ai.svg" alt=""></div>
+                <div class="item"><img src="img/Ai.svg" alt=""></div>
+                <div class="item"><img src="img/Ai.svg" alt=""></div>
+                <div class="item"><img src="img/Ps.svg" alt=""></div>
+            </div><!-- .graphic_right end -->
+
+        </section><!-- .graphic end -->
+
+        <section class="contact" id="5">
+            <div class="text_wrap">
+                <h2>CONTACT ME!</h2>
+                <p>24시간 이내에 답변 드릴 것을 약속 드립니다.</p>
+                <img src="img/arrow.svg" alt="">
+            </div><!-- .title_wrap end -->
+            <div class="contact_con">
+                <div class="qr">
+                    <img src="img/kakao_QR.png" alt="">
+                    <div class="btn">
+                        <button type="button"><a href="src/portfolio_compressed.pdf" target='_blank'>PDF</a></button>
+                        <button type="button"><a href="https://github.com/hymshark" target='_blank'>Git Hub</a></button>
+                    </div><!-- .btn end -->
+                </div><!-- .qr end -->
+                <ul>
+                    <li class="call">
+                        <img src="img/call_icon.svg" alt="">
+                        <p>010 - 2572 - 2824</p>
+                    </li><!-- .call end -->
+                    <li class="call">
+                        <img src="img/mail_icon.svg" alt="">
+                        <p>shinhyemi@kakao.com</p>
+                    </li><!-- .call end -->
+                    <li class="call">
+                        <img src="img/kakao_icon.svg" alt="">
+                        <p>@shin_hyemi</p>
+                    </li><!-- .call end -->
+                </ul>
+            </div><!-- .contact_con end -->
+        </section><!-- .contact end -->
+    </main><!-- .main end -->
+
+
+    <footer class="footer">
+        <div class="footer_btn_wrap">
+            <div class="footer_btn">
+                <a href="https://github.com/hymshark?tab=overview&from=2025-01-01&to=2025-01-15" target='_blank'> <img src="img/git_icon.svg" alt="깃허브 바로이동"> </a>
+                <a href="https://www.instagram.com/hyemm____" target='_blank'> <img src="img/insta_icon.svg" alt="인스타 바로이동"> </a>
+            </div>
+            <h1 class="logo">HYEMI</h1>
+        </div><!-- .footer_btn_wrap end -->
+        <div class="footer_text">
+            <p>본 페이지는 상업적 목적이 아닌 개인 포트폴리오 용으로 제작되었습니다.</p>
+            <p>© 2025. shinhyemi. All rights reserved.</p>
+        </div><!-- .footer_text end -->
+    </footer><!-- .footer end -->
+
+    <div class="top_btn">
+        <img src="img/top_btn.png" alt="위로 가기" />
+        <p>TOP</p>
+    </div><!-- .top_btn end -->
+</body>
+
+</html>

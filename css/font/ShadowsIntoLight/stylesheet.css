@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Playride';
+    src: url('Playride.eot');
+    src: url('Playride.eot?#iefix') format('embedded-opentype'),
+        url('Playride.woff2') format('woff2'),
+        url('Playride.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Shadows Into';
+    src: url('ShadowsIntoLight.eot');
+    src: url('ShadowsIntoLight.eot?#iefix') format('embedded-opentype'),
+        url('ShadowsIntoLight.woff2') format('woff2'),
+        url('ShadowsIntoLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
