@@ -23,7 +23,7 @@ $(function(){
     //커서
     let $mouseCursor = $('#cursor');
     function moveCircle(e) {
-        TweenLite.to($mouseCursor, 0.1, {
+        TweenLite.to($mouseCursor, 0.01, {
           css: {
             left: e.pageX,
             top: e.pageY
