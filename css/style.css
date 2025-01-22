@@ -703,6 +703,15 @@ main {
   bottom: 20px;
   right: 6px;
 }
+.graphic  .graphic_right .item:nth-child(6) img {
+  bottom: 97.5px;
+}
+.graphic  .graphic_right .item:nth-child(7) img {
+  bottom: -1px;
+}
+.graphic  .graphic_right .item:nth-child(8) img {
+  bottom: 6.5px;
+}
 .graphic  .graphic_right .item:nth-child(2n+1){
   margin-top: -15%;
 }
@@ -746,12 +755,18 @@ main {
   width: calc(100% * 0.4873);
   height: calc(100vh * 0.4106);
 }
-/* .graphic  .graphic_right .item:nth-child(7) {
-
+.graphic  .graphic_right .item:nth-child(7) {
+  background: url(../img/graphic/Ps_02.jpg) center center / contain no-repeat;
+  max-width: 385px;
+  width: calc(100% * 0.4873);
+  height: calc(100vh * 0.4106);
 }
 .graphic  .graphic_right .item:nth-child(8) {
-
-} 아트웍 추가 */
+  background: url(../img/graphic/Ps_03.jpg) center center / contain no-repeat;
+  max-width: 385px;
+  width: calc(100% * 0.4873);
+  height: calc(100vh * 0.57);
+} /* 아트웍 추가 */
 
 
 /* contact */
