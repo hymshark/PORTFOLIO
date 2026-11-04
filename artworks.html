@@ -42,6 +42,10 @@ figcaption{display:block;text-align:left}figcaption p{margin:4px 0 0;font-size:1
 figcaption{line-height:1}figcaption h2{font-size:16px;line-height:1}figcaption p{font-size:14px;line-height:1}
 .footer_text p:first-child,.footer_text p:last-child{font-size:12px}
 @media(max-width:600px){.gallery-hint{font-size:15px}}
+
+figcaption p{margin-top:8px}
+
+.portfolio-header{transition:background-color .2s ease}.portfolio-header.is-scrolled{background:rgba(255,255,255,.75);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}@media(prefers-reduced-motion:reduce){.portfolio-header{transition:none}}
 </style>
 </head>
 <body>
@@ -78,7 +82,7 @@ figcaption{line-height:1}figcaption h2{font-size:16px;line-height:1}figcaption p
     </footer>
 <dialog id="viewer" aria-labelledby="viewer-title"><div class="viewer-bar"><h2 id="viewer-title" class="viewer-title"></h2><div class="viewer-controls"><span class="viewer-count" id="viewer-count" aria-live="polite"></span><button type="button" id="previous" aria-label="이전 작업">←</button><button type="button" id="next" aria-label="다음 작업">→</button><button type="button" id="close" aria-label="확대 이미지 닫기">×</button></div></div><div class="viewer-scroll" id="viewer-scroll"><img class="viewer-image" id="viewer-image" alt=""></div></dialog>
 <script>
-(()=>{'use strict';const buttons=[...document.querySelectorAll('.image-button')];const viewer=document.getElementById('viewer');const img=document.getElementById('viewer-image');const title=document.getElementById('viewer-title');const count=document.getElementById('viewer-count');const scroll=document.getElementById('viewer-scroll');let current=0;let trigger=null;
+(()=>{'use strict';const header=document.querySelector('.portfolio-header');function updateHeader(){header.classList.toggle('is-scrolled',window.scrollY>0)}window.addEventListener('scroll',updateHeader,{passive:true});window.addEventListener('pageshow',updateHeader);updateHeader();const buttons=[...document.querySelectorAll('.image-button')];const viewer=document.getElementById('viewer');const img=document.getElementById('viewer-image');const title=document.getElementById('viewer-title');const count=document.getElementById('viewer-count');const scroll=document.getElementById('viewer-scroll');let current=0;let trigger=null;
 let scale=1,panX=0,panY=0,startScale=1,startDistance=0,lastX=0,lastY=0;const touches=new Map();
 function drawZoom(){img.style.transform='translate('+panX+'px,'+panY+'px) scale('+scale+')'}
 function resetZoom(){scale=1;panX=panY=0;touches.clear();img.style.transform=''}
